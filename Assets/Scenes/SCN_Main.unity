@@ -2739,6 +2739,10 @@ PrefabInstance:
       propertyPath: compareTag
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 8613649095266584873, guid: e2d2fe49b4ea57e46b1539901182c740, type: 3}
+      propertyPath: timeToHide
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 7257920926357774452, guid: e2d2fe49b4ea57e46b1539901182c740, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: e2d2fe49b4ea57e46b1539901182c740, type: 3}
