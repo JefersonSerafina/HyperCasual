@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ItemCollectableBase : MonoBehaviour
+public class ItemCollactableBase : MonoBehaviour
 {
     public string compareTag = "Player";
     public ParticleSystem particleSystem;
