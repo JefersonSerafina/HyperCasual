@@ -33,11 +33,13 @@ public class LevelManager : MonoBehaviour
             Destroy(_currentLevel);
             _index++;
 
-            if (_index >= levels.Count)
+            if (_index >= levelPieceBaseSetups.Count)
             {
                 ResetLevelIndex();
             }
         }
+
+        _currSetup = levelPieceBaseSetups[ _index ];
 
         _currentLevel = Instantiate(levels[_index], container);
         _currentLevel.transform.localPosition = Vector3.zero;
@@ -80,6 +82,8 @@ public class LevelManager : MonoBehaviour
             CreateLevelPiece(_currSetup.levelPiecesEnd);
         }
 
+        ColorManager.Instance.ChangeColorByType(_currSetup.artType);
+
     }
 
     private void CreateLevelPiece(List<LevelPieceBase> list)
@@ -91,9 +95,16 @@ public class LevelManager : MonoBehaviour
         {
             var  lastPiece = _spawnedPieces[_spawnedPieces.Count - 1];
 
-
             spawnedPiece.transform.position = lastPiece.endPiece.position;
         }
+        else
+        {
+            spawnedPiece.transform.localPosition = Vector3.zero;
+        }
+
+        /*var artTypeValues = System.Enum.GetValues(typeof(ArtManager.ArtType));
+        var randomArtType = (ArtManager.ArtType)artTypeValues.GetValue(Random.Range(0,artTypeValues.Length));*/
+
 
         foreach (var p in spawnedPiece.GetComponentsInChildren<ArtPiece>())
         {
@@ -121,7 +132,8 @@ public class LevelManager : MonoBehaviour
     {
         if(Input.GetKeyDown(KeyCode.D))
         {
-            SpawnNextLevel();
+            CreateLevelPieces();
+            CleanSpawnedPieces();
         }
     }
 

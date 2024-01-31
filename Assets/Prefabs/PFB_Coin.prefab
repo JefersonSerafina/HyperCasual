@@ -96,9 +96,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 29dbc172b27db894d87bcc4d0bd9cd0c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  compareTag: CoinCollector
+  compareTag: Player
   particleSystem: {fileID: 0}
-  timeToHide: 3
+  timeToHide: 0
   graphicItem: {fileID: 7257920926357774453}
 --- !u!135 &7257920926357774455
 SphereCollider:
