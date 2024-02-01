@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using DG.Tweening;
 
 public class PowerUpBase : ItemCollactableBase
 {
@@ -10,6 +11,7 @@ public class PowerUpBase : ItemCollactableBase
     {
         base.OnCollect();
         StartPowerUp();
+        PlayerController.Instance.transform.DOScale(0.7f, 0.05f).SetEase(Ease.OutBack).SetLoops(2, LoopType.Yoyo);
     }
     protected virtual void StartPowerUp()
     {

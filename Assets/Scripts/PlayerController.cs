@@ -30,6 +30,8 @@ public class PlayerController : Singleton<PlayerController>
     [Header("Animation")]
     public AnimatorManager animatorManager;
 
+    [SerializeField] private BounceHelper _bounceHelper;
+
 
     //privates
     private bool _canRun;
@@ -40,8 +42,15 @@ public class PlayerController : Singleton<PlayerController>
 
     private void Start()
     {
+        transform.DOScale(0.5f, .5f).SetEase(Ease.OutBack).SetLoops(1, LoopType.Yoyo);
         _startPosition = transform.position;
         ResetSpeed();
+    }
+
+     public void Bounce()
+    {
+        if(_bounceHelper != null)
+        _bounceHelper.Bounce();
     }
 
 
