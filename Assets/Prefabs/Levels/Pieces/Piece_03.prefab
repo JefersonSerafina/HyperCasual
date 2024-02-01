@@ -219,6 +219,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 8267218558623700528}
     m_Modifications:
+    - target: {fileID: 275251938302821292, guid: e2d2fe49b4ea57e46b1539901182c740, type: 3}
+      propertyPath: CollisionModule.m_Planes.Array.data[0]
+      value: 
+      objectReference: {fileID: 4339183631734734096}
     - target: {fileID: 7257920926357774453, guid: e2d2fe49b4ea57e46b1539901182c740, type: 3}
       propertyPath: m_Name
       value: PFB_Coin (2)
@@ -413,6 +417,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 8267218558623700528}
     m_Modifications:
+    - target: {fileID: 275251938302821292, guid: e2d2fe49b4ea57e46b1539901182c740, type: 3}
+      propertyPath: CollisionModule.m_Planes.Array.data[0]
+      value: 
+      objectReference: {fileID: 4339183631734734096}
     - target: {fileID: 7257920926357774453, guid: e2d2fe49b4ea57e46b1539901182c740, type: 3}
       propertyPath: m_Name
       value: PFB_Coin (5)
@@ -475,6 +483,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 8267218558623700528}
     m_Modifications:
+    - target: {fileID: 275251938302821292, guid: e2d2fe49b4ea57e46b1539901182c740, type: 3}
+      propertyPath: CollisionModule.m_Planes.Array.data[0]
+      value: 
+      objectReference: {fileID: 4339183631734734096}
     - target: {fileID: 7257920926357774453, guid: e2d2fe49b4ea57e46b1539901182c740, type: 3}
       propertyPath: m_Name
       value: PFB_Coin (1)
@@ -537,6 +549,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 8267218558623700528}
     m_Modifications:
+    - target: {fileID: 275251938302821292, guid: e2d2fe49b4ea57e46b1539901182c740, type: 3}
+      propertyPath: CollisionModule.m_Planes.Array.data[0]
+      value: 
+      objectReference: {fileID: 4339183631734734096}
     - target: {fileID: 7257920926357774453, guid: e2d2fe49b4ea57e46b1539901182c740, type: 3}
       propertyPath: m_Name
       value: PFB_Coin (3)
@@ -599,6 +615,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 8267218558623700528}
     m_Modifications:
+    - target: {fileID: 275251938302821292, guid: e2d2fe49b4ea57e46b1539901182c740, type: 3}
+      propertyPath: CollisionModule.m_Planes.Array.data[0]
+      value: 
+      objectReference: {fileID: 4339183631734734096}
     - target: {fileID: 7257920926357774453, guid: e2d2fe49b4ea57e46b1539901182c740, type: 3}
       propertyPath: m_Name
       value: PFB_Coin (4)
@@ -723,6 +743,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 8267218558623700528}
     m_Modifications:
+    - target: {fileID: 275251938302821292, guid: e2d2fe49b4ea57e46b1539901182c740, type: 3}
+      propertyPath: CollisionModule.m_Planes.Array.data[0]
+      value: 
+      objectReference: {fileID: 4339183631734734096}
     - target: {fileID: 7257920926357774453, guid: e2d2fe49b4ea57e46b1539901182c740, type: 3}
       propertyPath: m_Name
       value: PFB_Coin
